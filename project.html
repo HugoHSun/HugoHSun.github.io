@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Project</title>
+  <link href="css/reset.css" rel="stylesheet" type="text/css"/>
+  <link href="css/style.css" rel="stylesheet" type="text/css"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a id="logo" href="index.html">Hugo Sun</a>
+      <div id="nav_to_pages">
+        <a href="index.html#about_me">About</a>
+        <a href="project.html">Project</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <button class="hamburger">
+        <!-- material icons https://material.io/resources/icons/ -->
+        <i class="menuButton material-icons" style="font-size: 2rem;">menu</i>
+      </button>
+      <div class="menu">
+        <ul>
+          <li class="menuItem"><a href="index.html#about_me">About</a></li>
+          <li class="menuItem"><a href="project.html">Project</a></li>
+          <li class="menuItem"><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h1 id="project_heading">Projects</h1>
+    <section class="text_and_image_content">
+      <div class="intro_text_container">
+        <a href="https://github.com/HugoHSun/quick-draw"><h2 class="project_sub_heading">Project 1 - Quick, Draw!</h2></a>
+        <p>This is a drawing game that utilises a machine learning model to guess your drawings. Try to get the highest prediction score in the shortest time! This project was created in a team of 3 from a simple application template; Java, Javafx and CSS were used. </p>
+      </div>
+      <div>
+        <img src="images/project1.png" alt="project 1 image">
+      </div>
+    </section>
+    <section class="text_and_image_content">
+      <div class="intro_text_container">
+        <a href="https://github.com/HugoHSun/dogshaven-website"><h2 class="project_sub_heading">Project 2 - DogsHaven Web Prototype</h2></a>
+        <p>This project is a prototype for our client DogsHaven - a dog day care centre. It is meant to showcase how the final web system would look like in a static form, thus only HTML & CSS were used. I was in a team of 5 for this project, where I mainly made the header, footer and contact page.</p>
+      </div>
+      <div>
+        <img src="images/project2.png" alt="project 2 image">
+      </div>
+    </section>
+    <section class="text_and_image_content">
+      <div class="intro_text_container">
+        <h2 class="project_sub_heading">Project 3 - This website!</h2>
+        <p>More updates coming soon!</p>
+      </div>
+      <div>
+        <img src="images/project3.png" alt="project 3 image">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <h2>Want to get in touch?</h2>
+    <div class="social_icons">
+      <a href="https://linkedin.com/in/HugoSun2023" class="social_icon" target="_blank"><img src="images/icons/LinkedIn.png" alt="LinkedIn logo" id="linkedin_logo">LinkedIn</a>
+      <a href="https://github.com/HugoHSun" class="social_icon" target="_blank"><img src="images/icons/Github.png" alt="Github logo" class="logos">Github</a>
+      <a href="contact.html" class="social_icon"><img src="images/icons/Contact.png" alt="Contact icon" class="logos">Contact</a>
+    </div>
+  </footer>
+  <script src="javascript/script.js"></script>
+</body>
+</html>

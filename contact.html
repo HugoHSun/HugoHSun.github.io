@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Contact</title>
+  <link href="css/reset.css" rel="stylesheet" type="text/css"/>
+  <link href="css/style.css" rel="stylesheet" type="text/css"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a id="logo" href="index.html">Hugo Sun</a>
+        <div id="nav_to_pages">
+          <a href="index.html#about_me">About</a>
+          <a href="project.html">Project</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <button class="hamburger">
+          <!-- material icons https://material.io/resources/icons/ -->
+          <i class="menuButton material-icons" style="font-size: 2rem;">menu</i>
+        </button>
+        <div class="menu">
+          <ul>
+            <li class="menuItem"><a href="index.html#about_me">About</a></li>
+            <li class="menuItem"><a href="project.html">Project</a></li>
+            <li class="menuItem"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+    </nav>
+  </header>
+<main>
+    <form action="https://formspree.io/f/mpzenrvr" method="POST">
+        <h1 id="contact_heading">Contact me</h1>
+        <p id="contact_paragraph">I would love to hear from you!</p>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="email" required>
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" placeholder="subject" required>
+        <label for="message">Message:</label>
+        <textarea type="text" id="message" name="message" placeholder="Type your message here" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</main>
+
+  <footer>
+      <h2>Want to get in touch?</h2>
+      <div class="social_icons">
+          <a href="https://linkedin.com/in/HugoSun2023" class="social_icon" target="_blank"><img src="images/icons/LinkedIn.png" alt="LinkedIn logo" id="linkedin_logo">LinkedIn</a>
+          <a href="https://github.com/HugoHSun" class="social_icon" target="_blank"><img src="images/icons/Github.png" alt="Github logo" class="logos">Github</a>
+          <a href="contact.html" class="social_icon"><img src="images/icons/Contact.png" alt="Contact icon" class="logos">Contact</a>
+      </div>
+  </footer>
+  <script src="javascript/script.js"></script>
+</body>
+</html>

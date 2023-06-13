@@ -1,0 +1,252 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+/*--------Header--------*/
+header {
+    margin-bottom: 100px;
+}
+
+#logo {
+    font-size: 3rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav_to_pages a {
+    margin-left: 2.5rem;
+}
+
+/*Hamburger Menu*/
+.hamburger {
+    display: none;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    z-index: 100;
+}
+
+.menu {
+    background: white;
+    padding-top: 4rem;
+    text-align: center;
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+}
+
+.menu li {
+    margin-bottom: 40px;
+}
+
+.menuButton:hover {
+    color: #8c8c8c;
+}
+/*--------Header--------*/
+
+/*--------Footer--------*/
+footer {
+    margin-top: 100px;
+}
+
+.social_icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.social_icon {
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#linkedin_logo {
+    width: 25px;
+    height: 21px;
+    margin-right: 2px;
+}
+
+.logos {
+    width: 23px;
+    height: 23px;
+    margin-right: 5px;
+}
+/*-----Footer--------*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #212121;
+    padding: 40px 60px;
+}
+
+main {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    color: black;
+    letter-spacing: .2rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8c8c8c;
+}
+
+.intro_text_container {
+    width: 50%;
+}
+
+img {
+    width: 100%;
+    border-radius: 10%;
+}
+
+section {
+    margin-bottom: 200px;
+}
+
+#about_me {
+    text-align: center;
+}
+
+p {
+    letter-spacing: .1em;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+h3 {
+    color: #666666;
+}
+
+h1, h2, h3 {
+    letter-spacing: .2rem;
+    margin-bottom: 1.5rem;
+}
+
+.text_and_image_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+#project_heading {
+    margin-bottom: 80px;
+}
+
+.project_sub_heading {
+    margin-bottom: 30px;
+}
+
+#contact_heading {
+    font-size: 2rem;
+    text-align: left;
+}
+
+#contact_paragraph {
+    font-size: 15px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    font-size: 20px;
+    text-align: left;
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 8px;
+}
+
+textarea {
+    height: 200px;
+    resize: vertical;
+    border-radius: 8px;
+}
+
+button[type="submit"] {
+    background-color: dodgerblue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 8px;
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #44626e;
+}
+
+@media only screen and (max-width: 900px){
+    .hamburger{
+        display: block;
+    }
+    #nav_to_pages {
+        display: none;
+    }
+    .text_and_image_content {
+        flex-direction: column;
+        column-gap: 20px;
+    }
+    .intro_text_container {
+        width: 100%;
+    }
+    .social_icons {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.showMenu {
+    transform: translateY(0);
+}
